@@ -1,0 +1,33 @@
+<html>
+    <head>
+    	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <title>Admin Page</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    
+    	<div id = "page_header"">
+    		<h1 align = "center">Δήμος Καρλοβάσου</h1>
+        	<button onclick="logout()">Logout</button>
+        </div>
+        <center><div id="map"></div></center>
+        <ul id="replist"></ul>
+        <div id="repdetail">
+            <p>
+                <strong class="detailName"></strong>
+            </p>
+            <br></br>
+            <p>
+        	    <img id="detailimage"/>  
+            </p>
+        </div>
+        
+       
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8yKxNMui--m-z5M9DGMyMZFR0b5M1mTc&callback=initMap"
+        type="text/javascript"></script>
+        <!-- firebase sdk link goes here -->
+        <script src="index.js"></script>
+    </body>
+</html>
